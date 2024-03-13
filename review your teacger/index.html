@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teacher Review Portal</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Teacher Review Portal</h1>
+    <div class="review-section">
+      <h2>Leave a Review</h2>
+      <form class="review-form">
+        <div class="form-group">
+          <label for="teacher-name">Teacher Name:</label>
+          <input type="text" id="teacher-name" placeholder="Enter teacher's name" required>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" placeholder="Enter subject" required>
+        </div>
+        <div class="form-group">
+          <label>Rating:</label>
+          <div id="rating-stars" class="smileys">
+            <input type="radio" name="rating" id="rating-1" value="1">
+            <label for="rating-1"></label>
+            <input type="radio" name="rating" id="rating-2" value="2">
+            <label for="rating-2"></label>
+            <input type="radio" name="rating" id="rating-3" value="3">
+            <label for="rating-3"></label>
+            <input type="radio" name="rating" id="rating-4" value="4">
+            <label for="rating-4"></label>
+            <input type="radio" name="rating" id="rating-5" value="5">
+            <label for="rating-5"></label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="review-text">Review:</label>
+          <textarea id="review-text" placeholder="Write your review" required></textarea>
+        </div>
+        <button type="submit" class="btn">Submit Review</button>
+      </form>
+    </div>
+    <div class="reviews-container">
+        <div class="review">
+          <h3>Teacher: John Doe</h3>
+          <p>Subject: Mathematics</p>
+          <p>Rating: 5 stars</p>
+          <p>Review: John is an excellent teacher. He explains complex concepts with clarity and patience.</p>
+        </div>
+        <!-- More reviews can be added similarly -->
+      </div>
+    </body>
+ </html>    
